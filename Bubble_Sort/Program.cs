@@ -9,8 +9,6 @@ namespace Bubble_Sort
     {
         static void Main(string[] args)
         {
-            Random rnd = new Random();
-            Random rnd2 = new Random();
             double[] array = new double[10];
             array[0] = 5;
             array[1] = 17;
@@ -22,6 +20,10 @@ namespace Bubble_Sort
             array[7] = 7;
             array[8] = 11;
             array[9] = 14;
+            PrintArray(array);
+            BubbleSort(array);
+            PrintArray(array);
+            Console.ReadKey();
         }
         static void PrintArray(double[] PrintArray)
         {
@@ -33,7 +35,6 @@ namespace Bubble_Sort
         }
         static void BubbleSort(double[] arraytosort)
         {
-            
             for(int j = 0 ; j < 10; j++)
             {
                 double temp = 0;
